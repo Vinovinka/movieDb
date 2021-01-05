@@ -12,7 +12,6 @@ class MainTabVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
-
     }
 
     private func setup() {
@@ -25,5 +24,4 @@ class MainTabVC: UITabBarController {
         self.viewControllers = [UINavigationController(rootViewController: list), search]
         
     }
-
 }
