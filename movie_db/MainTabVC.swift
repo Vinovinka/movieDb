@@ -16,10 +16,10 @@ class MainTabVC: UITabBarController {
 
     private func setup() {
         let list = MoviesListVC()
-        list.tabBarItem = UITabBarItem(title: "Фильмы", image: nil, tag: 0)
+        list.tabBarItem = UITabBarItem(title: "Movies", image: nil, tag: 0)
         
         let search = SearchVC()
-        search.tabBarItem = UITabBarItem(title: "Поиск", image: nil, tag: 1)
+        search.tabBarItem = UITabBarItem(title: "Search", image: nil, tag: 1)
         
         self.viewControllers = [UINavigationController(rootViewController: list), search]
         

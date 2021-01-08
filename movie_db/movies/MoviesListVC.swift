@@ -25,8 +25,8 @@ class MoviesListVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationItem.largeTitleDisplayMode = .never
-        self.title = "Фильмы"
+        self.navigationItem.largeTitleDisplayMode = .automatic
+        self.title = "Movies"
         self.moviesList?.delegate = self.adapter
         self.moviesList?.dataSource = self.adapter
         self.adapter?.owner = self

@@ -28,8 +28,8 @@ class SearchVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationItem.largeTitleDisplayMode = .never
-        self.title = "Поиск"
+        self.navigationItem.largeTitleDisplayMode = .automatic
+        self.title = "Search"
         self.searchList?.delegate = self.adapter
         self.searchList?.dataSource = self.adapter
         self.adapter?.owner = self
