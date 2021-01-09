@@ -24,6 +24,10 @@ class BDDTest: movie_dbUITestBase {
         Report.step("проверяем, что поиск выдал нужное значение") {
             thenIShoulSeeMovie()
         }
+        
+        Report.step("возвращаемся обратно на экран списка фильмов") {
+            getBackToTheMovies()
+        }
 
     }
 }

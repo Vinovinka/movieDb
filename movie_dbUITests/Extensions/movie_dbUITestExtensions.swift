@@ -11,7 +11,7 @@ import XCTest
 extension movie_dbUITestBase {
     
     func givenAppIsReady() {
-        app.buttons["Search"].tap()
+        movie_dbSearchScreen.searchButton.element.tap()
         XCTAssert(movie_dbSearchScreen.searchButton.element.isSelected)
     }
     
@@ -22,5 +22,11 @@ extension movie_dbUITestBase {
     
     func thenIShoulSeeMovie() {
         XCTAssertTrue(app.staticTexts["It Chapter Two"].isEnabled)
+    }
+    
+    func getBackToTheMovies() {
+        movie_dbSearchScreen.moviesButton.element.tap()
+        movie_dbSearchScreen.cancelButton.element.tap()
+        XCTAssert(movie_dbSearchScreen.moviesButton.element.isSelected)
     }
 }
