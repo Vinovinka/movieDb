@@ -13,6 +13,11 @@
 		E21E8BE125A4D7FF00CDCC11 /* ReportHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BE025A4D7FF00CDCC11 /* ReportHelpers.swift */; };
 		E21E8BE525A4DBE400CDCC11 /* movie_dbUITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BE425A4DBE400CDCC11 /* movie_dbUITestExtensions.swift */; };
 		E21E8BEB25A4EA4800CDCC11 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */; };
+		E24CD2F325B0645B00EAF2BE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD2F225B0645B00EAF2BE /* Page.swift */; };
+		E24CD2F925B0659800EAF2BE /* UITestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD2F825B0659800EAF2BE /* UITestConstants.swift */; };
+		E24CD2FD25B0661E00EAF2BE /* XCUIApplication+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD2FC25B0661E00EAF2BE /* XCUIApplication+Tools.swift */; };
+		E24CD30125B0670F00EAF2BE /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD30025B0670F00EAF2BE /* UIElements.swift */; };
+		E24CD30525B0675A00EAF2BE /* UIElementPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD30425B0675A00EAF2BE /* UIElementPage.swift */; };
 		E263E46D25239CBA00BB1C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263E46C25239CBA00BB1C9B /* AppDelegate.swift */; };
 		E263E46F25239CBA00BB1C9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263E46E25239CBA00BB1C9B /* SceneDelegate.swift */; };
 		E263E47125239CBA00BB1C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E263E47025239CBA00BB1C9B /* ViewController.swift */; };
@@ -68,6 +73,11 @@
 		E21E8BE025A4D7FF00CDCC11 /* ReportHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHelpers.swift; sourceTree = "<group>"; };
 		E21E8BE425A4DBE400CDCC11 /* movie_dbUITestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_dbUITestExtensions.swift; sourceTree = "<group>"; };
 		E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		E24CD2F225B0645B00EAF2BE /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		E24CD2F825B0659800EAF2BE /* UITestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestConstants.swift; sourceTree = "<group>"; };
+		E24CD2FC25B0661E00EAF2BE /* XCUIApplication+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Tools.swift"; sourceTree = "<group>"; };
+		E24CD30025B0670F00EAF2BE /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		E24CD30425B0675A00EAF2BE /* UIElementPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementPage.swift; sourceTree = "<group>"; };
 		E263E46925239CBA00BB1C9B /* movie_db.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movie_db.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E263E46C25239CBA00BB1C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E263E46E25239CBA00BB1C9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,10 +137,9 @@
 		E21E8BC225A46AE900CDCC11 /* movie_dbUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E24CD2ED25B063A500EAF2BE /* Common */,
+				E21E8BF325AA2A1900CDCC11 /* PageObjects */,
 				E21E8BF625AA2A9A00CDCC11 /* Tests */,
-				E21E8BF025AA29CA00CDCC11 /* BaseClass */,
-				E21E8BF725AA2AC100CDCC11 /* Extensions */,
-				E21E8BF325AA2A1900CDCC11 /* Pages */,
 				E21E8BC525A46AE900CDCC11 /* Info.plist */,
 			);
 			path = movie_dbUITests;
@@ -144,12 +153,13 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
-		E21E8BF325AA2A1900CDCC11 /* Pages */ = {
+		E21E8BF325AA2A1900CDCC11 /* PageObjects */ = {
 			isa = PBXGroup;
 			children = (
-				E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */,
+				E24CD2F125B0643800EAF2BE /* Pages */,
+				E24CD2F025B0642E00EAF2BE /* MainPage */,
 			);
-			path = Pages;
+			path = PageObjects;
 			sourceTree = "<group>";
 		};
 		E21E8BF625AA2A9A00CDCC11 /* Tests */ = {
@@ -164,10 +174,63 @@
 		E21E8BF725AA2AC100CDCC11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E21E8BE025A4D7FF00CDCC11 /* ReportHelpers.swift */,
 				E21E8BE425A4DBE400CDCC11 /* movie_dbUITestExtensions.swift */,
+				E24CD2FC25B0661E00EAF2BE /* XCUIApplication+Tools.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E24CD2EC25B0639400EAF2BE /* UITestConstants */ = {
+			isa = PBXGroup;
+			children = (
+				E24CD2F825B0659800EAF2BE /* UITestConstants.swift */,
+			);
+			path = UITestConstants;
+			sourceTree = "<group>";
+		};
+		E24CD2ED25B063A500EAF2BE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2C7B61925BEAE3D00E40C61 /* Helpers */,
+				E24CD2EF25B063FA00EAF2BE /* LaunchEnvironmentBuilder */,
+				E24CD2EE25B063DE00EAF2BE /* NetworkHelpers */,
+				E21E8BF025AA29CA00CDCC11 /* BaseClass */,
+				E21E8BF725AA2AC100CDCC11 /* Extensions */,
+				E24CD2EC25B0639400EAF2BE /* UITestConstants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E24CD2EE25B063DE00EAF2BE /* NetworkHelpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkHelpers;
+			sourceTree = "<group>";
+		};
+		E24CD2EF25B063FA00EAF2BE /* LaunchEnvironmentBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LaunchEnvironmentBuilder;
+			sourceTree = "<group>";
+		};
+		E24CD2F025B0642E00EAF2BE /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				E24CD2F225B0645B00EAF2BE /* Page.swift */,
+				E24CD30025B0670F00EAF2BE /* UIElements.swift */,
+				E24CD30425B0675A00EAF2BE /* UIElementPage.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		E24CD2F125B0643800EAF2BE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		E263E46025239CBA00BB1C9B = {
@@ -325,6 +388,14 @@
 			path = presenter;
 			sourceTree = "<group>";
 		};
+		E2C7B61925BEAE3D00E40C61 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E21E8BE025A4D7FF00CDCC11 /* ReportHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,10 +507,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24CD2FD25B0661E00EAF2BE /* XCUIApplication+Tools.swift in Sources */,
 				E21E8BDD25A4AA7A00CDCC11 /* BDDTest.swift in Sources */,
+				E24CD30525B0675A00EAF2BE /* UIElementPage.swift in Sources */,
 				E21E8BE125A4D7FF00CDCC11 /* ReportHelpers.swift in Sources */,
 				E21E8BEB25A4EA4800CDCC11 /* SearchPage.swift in Sources */,
+				E24CD30125B0670F00EAF2BE /* UIElements.swift in Sources */,
+				E24CD2F925B0659800EAF2BE /* UITestConstants.swift in Sources */,
 				E21E8BC425A46AE900CDCC11 /* movie_dbUITests.swift in Sources */,
+				E24CD2F325B0645B00EAF2BE /* Page.swift in Sources */,
 				E21E8BE525A4DBE400CDCC11 /* movie_dbUITestExtensions.swift in Sources */,
 				E21E8BD525A4A4A200CDCC11 /* movie_dbUITestBase.swift in Sources */,
 			);

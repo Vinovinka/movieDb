@@ -25,9 +25,9 @@ class BDDTest: movie_dbUITestBase {
             thenIShoulSeeMovie()
         }
         
-        Report.step("возвращаемся обратно на экран списка фильмов") {
-            getBackToTheMovies()
-        }
+//        Report.step("возвращаемся обратно на экран списка фильмов") {
+//            getBackToTheMovies()
+//        }
 
     }
 }
