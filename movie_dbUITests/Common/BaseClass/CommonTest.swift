@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-class movie_dbUITestBase: XCTestCase {
+class CommonTest: XCTestCase {
     
     var app = XCUIApplication()
     

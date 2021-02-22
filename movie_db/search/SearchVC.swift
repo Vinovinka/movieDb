@@ -35,6 +35,7 @@ class SearchVC: UIViewController {
         self.adapter?.owner = self
         self.searchBar.delegate = self
         self.searchBar.setShowsCancelButton(true, animated: true)
+        self.searchBar.accessibilityIdentifier = "Search"
     }
     
     override func viewWillDisappear(_ animated: Bool) {

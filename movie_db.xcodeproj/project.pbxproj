@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E21E8BC425A46AE900CDCC11 /* movie_dbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BC325A46AE900CDCC11 /* movie_dbUITests.swift */; };
-		E21E8BD525A4A4A200CDCC11 /* movie_dbUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BD425A4A4A200CDCC11 /* movie_dbUITestBase.swift */; };
+		E21E8BD525A4A4A200CDCC11 /* CommonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BD425A4A4A200CDCC11 /* CommonTest.swift */; };
 		E21E8BDD25A4AA7A00CDCC11 /* BDDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BDC25A4AA7A00CDCC11 /* BDDTest.swift */; };
 		E21E8BE125A4D7FF00CDCC11 /* ReportHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BE025A4D7FF00CDCC11 /* ReportHelpers.swift */; };
-		E21E8BE525A4DBE400CDCC11 /* movie_dbUITestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BE425A4DBE400CDCC11 /* movie_dbUITestExtensions.swift */; };
-		E21E8BEB25A4EA4800CDCC11 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */; };
+		E21E8BE525A4DBE400CDCC11 /* StepsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BE425A4DBE400CDCC11 /* StepsHelper.swift */; };
+		E21E8BEB25A4EA4800CDCC11 /* TabBarBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21E8BEA25A4EA4800CDCC11 /* TabBarBlock.swift */; };
+		E21F825B25DC24E0002708A8 /* DebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F825A25DC24E0002708A8 /* DebugTests.swift */; };
+		E21F825F25DC419C002708A8 /* MoviesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F825E25DC419C002708A8 /* MoviesPage.swift */; };
+		E21F826525DC41E3002708A8 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F826425DC41E3002708A8 /* SearchPage.swift */; };
+		E21F826B25DC4867002708A8 /* NavigationBarBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F826A25DC4867002708A8 /* NavigationBarBlock.swift */; };
 		E24CD2F325B0645B00EAF2BE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD2F225B0645B00EAF2BE /* Page.swift */; };
 		E24CD2F925B0659800EAF2BE /* UITestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD2F825B0659800EAF2BE /* UITestConstants.swift */; };
 		E24CD2FD25B0661E00EAF2BE /* XCUIApplication+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD2FC25B0661E00EAF2BE /* XCUIApplication+Tools.swift */; };
@@ -66,13 +69,16 @@
 
 /* Begin PBXFileReference section */
 		E21E8BC125A46AE900CDCC11 /* movie_dbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = movie_dbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E21E8BC325A46AE900CDCC11 /* movie_dbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_dbUITests.swift; sourceTree = "<group>"; };
 		E21E8BC525A46AE900CDCC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E21E8BD425A4A4A200CDCC11 /* movie_dbUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_dbUITestBase.swift; sourceTree = "<group>"; };
+		E21E8BD425A4A4A200CDCC11 /* CommonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTest.swift; sourceTree = "<group>"; };
 		E21E8BDC25A4AA7A00CDCC11 /* BDDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDTest.swift; sourceTree = "<group>"; };
 		E21E8BE025A4D7FF00CDCC11 /* ReportHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHelpers.swift; sourceTree = "<group>"; };
-		E21E8BE425A4DBE400CDCC11 /* movie_dbUITestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie_dbUITestExtensions.swift; sourceTree = "<group>"; };
-		E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		E21E8BE425A4DBE400CDCC11 /* StepsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsHelper.swift; sourceTree = "<group>"; };
+		E21E8BEA25A4EA4800CDCC11 /* TabBarBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBlock.swift; sourceTree = "<group>"; };
+		E21F825A25DC24E0002708A8 /* DebugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugTests.swift; sourceTree = "<group>"; };
+		E21F825E25DC419C002708A8 /* MoviesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPage.swift; sourceTree = "<group>"; };
+		E21F826425DC41E3002708A8 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		E21F826A25DC4867002708A8 /* NavigationBarBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarBlock.swift; sourceTree = "<group>"; };
 		E24CD2F225B0645B00EAF2BE /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		E24CD2F825B0659800EAF2BE /* UITestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestConstants.swift; sourceTree = "<group>"; };
 		E24CD2FC25B0661E00EAF2BE /* XCUIApplication+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Tools.swift"; sourceTree = "<group>"; };
@@ -148,7 +154,7 @@
 		E21E8BF025AA29CA00CDCC11 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				E21E8BD425A4A4A200CDCC11 /* movie_dbUITestBase.swift */,
+				E21E8BD425A4A4A200CDCC11 /* CommonTest.swift */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -165,8 +171,8 @@
 		E21E8BF625AA2A9A00CDCC11 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E21E8BC325A46AE900CDCC11 /* movie_dbUITests.swift */,
 				E21E8BDC25A4AA7A00CDCC11 /* BDDTest.swift */,
+				E21F825A25DC24E0002708A8 /* DebugTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -174,7 +180,7 @@
 		E21E8BF725AA2AC100CDCC11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E21E8BE425A4DBE400CDCC11 /* movie_dbUITestExtensions.swift */,
+				E21E8BE425A4DBE400CDCC11 /* StepsHelper.swift */,
 				E24CD2FC25B0661E00EAF2BE /* XCUIApplication+Tools.swift */,
 			);
 			path = Extensions;
@@ -228,7 +234,10 @@
 		E24CD2F125B0643800EAF2BE /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				E21E8BEA25A4EA4800CDCC11 /* SearchPage.swift */,
+				E21E8BEA25A4EA4800CDCC11 /* TabBarBlock.swift */,
+				E21F825E25DC419C002708A8 /* MoviesPage.swift */,
+				E21F826425DC41E3002708A8 /* SearchPage.swift */,
+				E21F826A25DC4867002708A8 /* NavigationBarBlock.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -507,17 +516,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21F825B25DC24E0002708A8 /* DebugTests.swift in Sources */,
 				E24CD2FD25B0661E00EAF2BE /* XCUIApplication+Tools.swift in Sources */,
 				E21E8BDD25A4AA7A00CDCC11 /* BDDTest.swift in Sources */,
+				E21F825F25DC419C002708A8 /* MoviesPage.swift in Sources */,
 				E24CD30525B0675A00EAF2BE /* UIElementPage.swift in Sources */,
 				E21E8BE125A4D7FF00CDCC11 /* ReportHelpers.swift in Sources */,
-				E21E8BEB25A4EA4800CDCC11 /* SearchPage.swift in Sources */,
+				E21E8BEB25A4EA4800CDCC11 /* TabBarBlock.swift in Sources */,
 				E24CD30125B0670F00EAF2BE /* UIElements.swift in Sources */,
 				E24CD2F925B0659800EAF2BE /* UITestConstants.swift in Sources */,
-				E21E8BC425A46AE900CDCC11 /* movie_dbUITests.swift in Sources */,
+				E21F826B25DC4867002708A8 /* NavigationBarBlock.swift in Sources */,
 				E24CD2F325B0645B00EAF2BE /* Page.swift in Sources */,
-				E21E8BE525A4DBE400CDCC11 /* movie_dbUITestExtensions.swift in Sources */,
-				E21E8BD525A4A4A200CDCC11 /* movie_dbUITestBase.swift in Sources */,
+				E21F826525DC41E3002708A8 /* SearchPage.swift in Sources */,
+				E21E8BE525A4DBE400CDCC11 /* StepsHelper.swift in Sources */,
+				E21E8BD525A4A4A200CDCC11 /* CommonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

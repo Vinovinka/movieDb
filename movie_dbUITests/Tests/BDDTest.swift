@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-class BDDTest: movie_dbUITestBase {
+class BDDTest: StepsHelper {
     
     func testSearchMovieInBddStyle() {
         Report.test("1", "Поиск фильма в базе") {}
