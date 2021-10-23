@@ -1,10 +1,3 @@
-//
-//  MoviesItemPresenter.swift
-//  movie_db
-//
-//  Created by Виктория Виноградова on 28.12.2020.
-//
-
 import Foundation
 
 class MoviesItemPresenter : NSObject, IMoviesItemPresenter {
@@ -27,6 +20,4 @@ class MoviesItemPresenter : NSObject, IMoviesItemPresenter {
             self.view?.setup(item: item)
         }
     }
-    
-    
 }

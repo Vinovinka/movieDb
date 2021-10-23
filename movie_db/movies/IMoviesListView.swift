@@ -1,13 +1,7 @@
-//
-//  IMoviesListView.swift
-//  movie_db
-//
-//  Created by Виктория Виноградова on 29.09.2020.
-//
-
 import Foundation
 
-protocol IMoviesListView : class {
+protocol IMoviesListView : AnyObject {
+    
     func setupMovies(movies: [MoviesItem])
     
     func openItem(movie: MoviesItem)

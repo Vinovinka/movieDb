@@ -24,11 +24,6 @@ class BDDTest: StepsHelper {
         Report.step("проверяем, что поиск выдал нужное значение") {
             thenIShoulSeeMovie()
         }
-        
-//        Report.step("возвращаемся обратно на экран списка фильмов") {
-//            getBackToTheMovies()
-//        }
-
     }
 }
 

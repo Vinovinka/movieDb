@@ -1,10 +1,3 @@
-//
-//  ReportHelpers.swift
-//  movie_dbUITests
-//
-//  Created by Виктория Виноградова on 05.01.2021.
-//
-
 import Foundation
 import XCTest
 

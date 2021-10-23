@@ -1,10 +1,3 @@
-//
-//  MoviesService.swift
-//  movie_db
-//
-//  Created by Виктория Виноградова on 04.10.2020.
-//
-
 import Foundation
 
 class MoviesService: NSObject {
@@ -19,7 +12,7 @@ class MoviesService: NSObject {
             case .failure(let error):
                 print(error.localizedDescription)
                 
-            case .success(let data):
+            case .success(_):
                 print("success")
             }
             completion(result)
@@ -33,7 +26,7 @@ class MoviesService: NSObject {
             case .failure(let error):
                 print(error.localizedDescription)
                 
-            case .success(let data):
+            case .success(_):
                 print("success")
             }
             completion(result)

@@ -1,10 +1,3 @@
-//
-//  NetworkService.swift
-//  movie_db
-//
-//  Created by Виктория Виноградова on 04.10.2020.
-//
-
 import Foundation
 
 class NetworkService: NSObject {

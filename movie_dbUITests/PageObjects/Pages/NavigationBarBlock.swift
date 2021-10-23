@@ -19,7 +19,4 @@ enum NavigationBarBlockUIElements {
     enum Button {
         static let cancel = "Cancel"
     }
-//    enum Input {
-//        static let search = ""
-//    }
 }

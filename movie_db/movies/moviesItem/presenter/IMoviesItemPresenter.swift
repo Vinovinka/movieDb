@@ -1,7 +1,6 @@
-
 import Foundation
 
-protocol IMoviesItemPresenter: class {
+protocol IMoviesItemPresenter: AnyObject {
     var view: IMoviesItemView? {get set}
     func setup(item: MoviesItem)
     

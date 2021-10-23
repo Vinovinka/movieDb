@@ -1,10 +1,3 @@
-//
-//  MoviesItemVC.swift
-//  movie_db
-//
-//  Created by Виктория Виноградова on 28.12.2020.
-//
-
 import UIKit
 import Kingfisher
 

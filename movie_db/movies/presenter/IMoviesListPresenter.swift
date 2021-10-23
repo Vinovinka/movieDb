@@ -1,7 +1,6 @@
-
 import Foundation
 
-protocol IMoviesListPresenter : class {
+protocol IMoviesListPresenter : AnyObject {
     var view: IMoviesListView? {get set}
     
     func loadData()

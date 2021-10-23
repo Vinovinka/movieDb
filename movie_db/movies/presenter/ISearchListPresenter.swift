@@ -1,7 +1,6 @@
-
 import Foundation
 
-protocol ISearchListPresenter : class {
+protocol ISearchListPresenter : AnyObject {
     var view: ISearchListView? {get set}
     
     func search(query: String)
